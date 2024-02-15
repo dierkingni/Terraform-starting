@@ -1,0 +1,1 @@
+1: Running the 'gcloud init' command to configure my gcp project properly. -> Project ID was 'mms-clp-playground2402-a-i2ar' for this case.

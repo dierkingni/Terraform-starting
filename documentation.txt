@@ -1,1 +1,10 @@
 1: Running the 'gcloud init' command to configure my gcp project properly. -> Project ID was 'mms-clp-playground2402-a-i2ar' for this case.
+
+2: creating the Cluster and Node-pool via Terraform.
+
+3: I didn't figure out how to deploy a docker container application via terraform.
+    3-1: So I'm deploying this currently via the cloud shell.
+    3-2: I created the necessary files in my cluster -> so the yaml files and the Dockerfile and the python-file
+    3-3: Created a DockerHub Repo "simple-web"
+    3-4: Executed the command: docker build -t dierkingni/simple-web .
+    3-5: Pushed the image to my dockerHub repo -> docker push dierkingni/simple-web

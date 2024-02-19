@@ -9,18 +9,15 @@ provider "google" {
 
 resource "google_container_cluster" "my-playground-cluster" {
   name     = "my-playground-cluster"
-  location = "europe-west-4"
-
-  # We can't create a cluster with no node pool defined, but we want to only use
-  # separately managed node pools. So we create the smallest possible default
-  # node pool and immediately delete it.
+  location = "europe-west4"
   remove_default_node_pool = true
   initial_node_count       = 1
+  network = "minecraft-network"
 }
 
 resource "google_container_node_pool" "pool-a" {
   name       = "pool-a"
-  location   = "europe-west-4"
+  location   = "europe-west4"
   cluster    = google_container_cluster.my-playground-cluster.name
   node_count = 3
 

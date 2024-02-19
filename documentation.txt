@@ -8,3 +8,6 @@
     3-3: Created a DockerHub Repo "simple-web"
     3-4: Executed the command: docker build -t dierkingni/simple-web .
     3-5: Pushed the image to my dockerHub repo -> docker push dierkingni/simple-web
+    3-6: Created the deployment.yaml file -> "kubectl create -f deployment.yaml"
+    3-7: Created a service.yaml file
+    3-8: CMD: kubectl get svc: ip for the load balancer with port 80 and there you go.

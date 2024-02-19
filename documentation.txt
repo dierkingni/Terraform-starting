@@ -1,5 +1,7 @@
 1: Running the 'gcloud init' command to configure my gcp project properly. -> Project ID was 'mms-clp-playground2402-a-i2ar' for this case.
 
+https://www.youtube.com/watch?v=cNh1CouQCWc
+
 2: creating the Cluster and Node-pool via Terraform.
 
 3: I didn't figure out how to deploy a docker container application via terraform.
